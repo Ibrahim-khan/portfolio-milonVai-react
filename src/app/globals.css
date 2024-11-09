@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0f172a; /* Set the default background color */
+  --foreground: #ffffff; /* Example foreground color */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0a0a0a; /* Dark mode background */
+    --foreground: #ededed; /* Dark mode foreground */
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  background-color: var(--background); /* Use the background variable */
+  color: var(--foreground); /* Use the foreground variable */
   font-family: Arial, Helvetica, sans-serif;
 }
